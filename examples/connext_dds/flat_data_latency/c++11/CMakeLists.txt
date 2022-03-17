@@ -27,3 +27,11 @@ target_link_libraries(flat_data_latency_subscriber_cpp2
     PRIVATE
         RTIConnextDDS::metp
 )
+
+set_target_properties(flat_data_latency_publisher_cpp2
+        PROPERTIES
+        LINK_FLAGS -no-pie)
+
+set_target_properties(flat_data_latency_subscriber_cpp2
+        PROPERTIES
+        LINK_FLAGS -no-pie)
